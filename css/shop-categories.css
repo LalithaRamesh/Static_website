@@ -1,0 +1,223 @@
+/*--------------------------------------------------------------------------
++	Category Heading Style - own
+--------------------------------------------------------------------------*/
+  
+	.heading {
+		color: #ff7b5c;
+		border: 2px solid #f1f0f0;
+	}
+
+    .heading span {
+        background: #f05657;
+        display: inline-block;
+        color: #fff;
+        padding: 4px 20px 4px 10px;
+        font-family: 'roboto_slabbold';
+    }
+
+    .heading i {
+        height: 0;
+        border-top: 34px solid #f05657;
+        border-right: 34px solid transparent;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    .heading.green span {
+        background:#75A72E ; <!-- #89c447 -->
+    }
+
+    .heading.green i {
+        border-top: 34px solid #75A72E;
+    }
+
+	.sub-heading {
+		color: #fff;
+		background: #f05657;
+		border: 2px solid #f1f0f0;
+		padding: 4px 20px 4px 10px;
+        font-family: 'roboto_slabbold';
+		text-align: center;
+	}
+  
+/*--------------------------------------------------------------------------
++	Ribbion Style
+--------------------------------------------------------------------------*/
+.ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.price-ribbon {
+  font: 15px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #FFF;
+  color: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  color: 0px 0px 3px rgba(0,0,0,0.3);
+}
+.ribbon-green {
+  background-color: #75A72E;
+}
+.ribbon-blue {
+  background-color: #5ACBFF;
+}
+.ribbon-orange {
+  background-color: #FF9542;
+}
+.ribbon-red {
+  background-color: #ED1B24;
+}
+
+
+/*--------------------------------------------------------------------------
++	E-commerce Style
+--------------------------------------------------------------------------*/
+.shop-item {
+  position: relative;
+  background: #FFF;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 8px solid #FFF;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+  -webkit-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
+  -moz-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
+  box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
+  color: inset 0 1px #fff,0 0 8px #c8cfe6;
+}
+.shop-item img {
+  max-width: 100%;
+}
+.shop-item .image {
+  img-align: center;
+  text-align: center;
+}
+.shop-item .title {
+  padding: 20px 0 10px;
+}
+.shop-item .title h3 {
+  font-size: 0.9em;
+  margin: 0 10px;
+  text-align: center;
+  color: #535b60;
+  text-transform: uppercase;
+}
+
+.shop-item .price {
+  color: #535b60;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  -webkit-border-radius: 7px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 7px;
+  -moz-background-clip: padding;
+  border-radius: 7px;
+  background-clip: padding-box;
+}
+.shop-item .price .price-was {
+  color: #A7A7A7;
+  font-size: 0.8em;
+  text-decoration: line-through;
+}
+
+/*--------------------------------------------------------------------------
++	Pagination Style (overrides Bootstrap style)
+--------------------------------------------------------------------------*/
+.pagination {
+  margin-top: 15px;
+  text-align: center;
+}
+.pagination > li > a,
+.pagination > li > span {
+  border: none;
+  border-bottom: 3px solid #FFF;
+  color: #666666;
+  margin-left: 0;
+  margin-bottom: 5px;
+  -webkit-transition: all .25s linear;
+  -moz-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  -ms-transition: all .25s linear;
+  transition: all .25s linear;
+}
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > .active > a,
+.pagination > .active > span {
+  background: #FFF;
+}
+.pagination > li > a:hover {
+  border-bottom: 3px solid #666666;
+}
+.pagination > .active > a,
+.pagination > .active > span {
+  color: #666666;
+  border-bottom: 3px solid #4f8db3;
+}
+.pagination > .disabled > a {
+  border-color: #fff;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  margin-bottom: 0;
+  color: #C9C9C9;
+  background-color: #FFF;
+  cursor: default;
+}
+
+/*--------------------------------------------------------------------------
++	Back to top option Style
+--------------------------------------------------------------------------*/
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #FFF;
+    color: #337AB7;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #337AB7;
+    color: #FFF;
+}
+
